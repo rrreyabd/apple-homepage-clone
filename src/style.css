@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'sf-pro-display';
+    src: url('/public/fonts/SF-Pro-Display.otf') format('.OTF');
+}
+
+@font-face {
+    font-family: 'sf-pro-text';
+    src: url('/public/fonts/SF-Pro-Text.otf') format('.OTF');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.headline {
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "sf-pro-display", sans-serif;
+}
+
+.headline_sm {
+    font-size: 30px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "sf-pro-display", sans-serif;
+}
+
+.subhead {
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+    font-family: "sf-pro-display", sans-serif;
+    margin-top: 6px;
+}
+
+.subhead_sm {
+    font-size: 18px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+    font-family: "sf-pro-display", sans-serif;
+    margin-top: 6px;
+}
+
+.button-elevated {
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 28px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    --sk-button-margin-horizontal: 18px;
+    --sk-button-margin-vertical: 18px;
+}
+
+.button-second {
+    font-size: 15px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    padding-top: 7px;
+    padding-right: 20px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+}
+
+.slide-enter {
+    transform: translateX(100%);
+}
+
+.slide-enter-active {
+    transform: translateX(0);
+    transition: transform 1000ms;
+}
+
+.slide-exit {
+    transform: translateX(0);
+}
+
+.slide-exit-active {
+    transform: translateX(-100%);
+    transition: transform 1000ms;
+}

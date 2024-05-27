@@ -15,15 +15,6 @@
 }
 
 .headline {
-    font-size: 56px;
-    line-height: 1.07143;
-    font-weight: 600;
-    letter-spacing: -.005em;
-    font-family: "sf-pro-display", sans-serif;
-}
-
-.headline_sm {
-    font-size: 30px;
     line-height: 1.07143;
     font-weight: 600;
     letter-spacing: -.005em;
@@ -31,7 +22,6 @@
 }
 
 .subhead {
-    font-size: 28px;
     line-height: 1.14286;
     font-weight: 400;
     letter-spacing: .007em;
@@ -40,7 +30,6 @@
 }
 
 .subhead_sm {
-    font-size: 18px;
     line-height: 1.14286;
     font-weight: 400;
     letter-spacing: .007em;

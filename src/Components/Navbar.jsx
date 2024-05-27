@@ -4,7 +4,7 @@ import { TbMenu } from "react-icons/tb";
 
 const Navbar = () => {
   return (
-    <div className="w-full flex justify-center text-xs sticky top-0 left-0 bg-white/80 shadow-md z-10">
+    <div className="w-full flex justify-center text-xs sticky top-0 left-0 bg-white/80 backdrop-blur-lg shadow-md z-10">
       <div className="w-[1024px] px-3 flex justify-between">
         <div className="">
           <AppleIcon />

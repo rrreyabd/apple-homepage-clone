@@ -13,8 +13,8 @@ const MovieCarousel = () => {
   }, []);
 
   return (
-    <div className="flex justify-center mt-4">
-      <div className="relative w-[1250px] h-[667.25px] flex justify-center">
+    <div className="flex justify-center mt-4 pb-12 overflow-hidden">
+      <div className="relative w-full sm:w-[1250px] h-[200px] sm:h-[667.25px] flex justify-center">
         {images.map((image, index) => {
           let positionClass = "translate-x-full -z-10";
           if (index === activeIndex) {
@@ -26,7 +26,7 @@ const MovieCarousel = () => {
           return (
             <div
               key={index}
-              className={`absolute w-full h-full transition-all duration-1000 ease-in-out ${positionClass} p-4 bg-white`}
+              className={`absolute w-full h-full transition-all duration-1000 ease-in-out ${positionClass} px-2 sm:px-4 bg-white`}
             >
               <img src={image} alt="Movie Cover" className={`h-full w-full object-cover z-0 ${
                 index === activeIndex ? "" : "opacity-40"
@@ -34,7 +34,7 @@ const MovieCarousel = () => {
             </div>
           );
         })}
-        <div className="flex gap-4 py-4 absolute -bottom-8">
+        <div className="flex gap-4 py-4 absolute -bottom-16 z-20">
           {images.map((_, index) => (
             <button
               key={index}
@@ -42,7 +42,7 @@ const MovieCarousel = () => {
               className={`w-2 h-2 rounded-full ${
                 index === activeIndex ? "bg-gray-900" : "bg-gray-400"
               }`}
-            />
+            ></button>
           ))}
         </div>
       </div>

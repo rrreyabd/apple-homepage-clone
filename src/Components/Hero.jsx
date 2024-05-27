@@ -11,7 +11,7 @@ const Hero = ({ data }) => {
       <div className="text-white flex flex-col items-center py-10 sm:py-16">
         {data.name && (
           <h1
-            className={`headline_sm sm:headline ${
+            className={`text-[30px] sm:text-[56px] headline ${
               data.id == 1 ? "text-white" : "text-black"
             } `}
           >
@@ -20,7 +20,7 @@ const Hero = ({ data }) => {
         )}
         {data.desc && (
           <h2
-            className={`subhead_sm sm:subhead ${data.id == 1 ? "text-white" : "text-black"} `}
+            className={`text-[18px] sm:text-[28px] subhead ${data.id == 1 ? "text-white" : "text-black"} `}
           >
             {data.desc}
           </h2>

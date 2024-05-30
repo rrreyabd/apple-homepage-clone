@@ -30,7 +30,6 @@ const Hero = ({ data }) => {
         <div className="flex gap-4 mt-4">
           {data.more && (
             <a
-              href={data.more}
               className="button-elevated border-primary rounded-full bg-primary"
             >
               Selengkapnya
@@ -38,7 +37,6 @@ const Hero = ({ data }) => {
           )}
           {data.buy && (
             <a
-              href={data.buy}
               className="button-elevated border-primary rounded-full bg-transparent text-primary hover:bg-primary hover:text-white transition-all"
             >
               Beli

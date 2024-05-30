@@ -1,7 +1,6 @@
 const Product = ({ data }) => {
   return (
     <a
-      href={data.more}
       className="h-[580px] w-full"
       style={{
         backgroundImage: `url(${data.background})`,
@@ -21,7 +20,6 @@ const Product = ({ data }) => {
         <div className="flex gap-4 mt-2">
           {data.more && (
             <a
-              href={data.more}
               className="button-second font-medium border border-primary rounded-full bg-primary text-white"
             >
               Selengkapnya
@@ -29,7 +27,6 @@ const Product = ({ data }) => {
           )}
           {data.buy && (
             <a
-              href={data.buy}
               className="button-second font-medium border border-primary rounded-full bg-transparent text-primary hover:bg-primary hover:text-white transition-all"
             >
               Beli
